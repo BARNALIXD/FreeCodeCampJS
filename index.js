@@ -1,5 +1,6 @@
-var arr1 = [[1,2,3],[4,5,6],[7,8,9]];
+var ourArray = ["John", 23];
 
-var element = arr1[1][2]; // Accessing the element '6' from the 2nd sub-array
+ourArray.push(["dog", 3]);
 
-console.log(element); // Output: 6  
+// ourArray now has [["John", 23], ["dog", 3]]  in it.
+console.log(ourArray);
