@@ -1,8 +1,5 @@
-function wordBlanks(noun, verb, adjective, adverb) {
-    var result = "";
-    result += "The " + adjective + " " + noun + " " + verb + " to the store " + adverb + ".";
-    return result;
-}
+var ourArray = ["John", 23];
+ourArray[0] = "Quincy";
+ourArray[1] = 45;
+console.log(ourArray);
 
-console.log(wordBlanks("dog", "ran", "quick", "quickly"));
-console.log(wordBlanks("cat", "jumped", "lazy", "slowly"));
