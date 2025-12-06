@@ -1,4 +1,5 @@
-var arr1 = [1,2,3];
-var removedfroma = arr1.pop();
-console.log(removedfroma); // 3
-console.log(arr1); // [1,2]
+var a = [1,2,3, "barnali", [4,5,6]];
+a.shift();
+console.log(a);
+
+//in pop we remove the last elemnt of the array and in shift we remove the first element of the array.
