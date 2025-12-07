@@ -1,17 +1,20 @@
-function multiplication(a, b) {
-    return a * b;
+var myGlobal = 10;
+
+function fun1(){
+
 }
 
-console.log(multiplication(4, 5));
-
-function division(a, b) {
-    if (b === 0) {
-        return 'Error: Division by zero';
-    }
-    return a / b;
+function fun2(){
+  var output = "";
+  if(typeof myGlobal != "undefined"){
+    output += "myGlobal: " + myGlobal;
+  }
+  if(typeof oopsGlobal != "undefined"){
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
 }
+fun1();
+fun2();
 
-console.log(division(20, 4));
-console.log(division(10, 0));
-
-module.exports = { multiplication, division };  
+oopsGlobal = 5; // Assigning a value to an undeclared variable
